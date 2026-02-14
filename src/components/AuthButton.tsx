@@ -23,7 +23,7 @@ export default function AuthButton({ user }: { user: any }) {
   return user ? (
     <button
       onClick={handleLogout}
-      className="flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md transition-colors"
+      className="flex cursor-pointer items-center gap-2 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md transition-colors"
     >
       <LogOut size={18} />
       Sign Out
@@ -31,7 +31,7 @@ export default function AuthButton({ user }: { user: any }) {
   ) : (
     <button
       onClick={handleLogin}
-      className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors"
+      className="flex cursor-pointer items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition-colors"
     >
       <LogIn size={18} />
       Sign in with Google
